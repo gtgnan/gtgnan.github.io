@@ -31,35 +31,202 @@
 									<header class="main">
 										<h1>Brain Computer Interfaces Research</h1>
 									</header>
+                                    
+                                    <p>
+                                    The objective of the proposed research is to address some of the fundamental challenges in Brain-Computer Interface (BCI) systems. Brain-computer interfaces have surfaced as a powerful and attractive modality in human-machine interaction. BCIs establish a channel for communicating with machines directly, bypassing the physical constraints and limi- tations of the body. However, EEG-based non-invasive BCIs also suffer from 2 fundamental challenges, among other problems. Firstly, since they measure the electrical activity in the brain externally on the scalp, it significantly reduces the signal-to-noise ratio. This leads to low detection accuracy and poor performance by classification models. Secondly, BCI signals do not generalize well across other individuals owing to a high amount of signal variability between subjects. This makes it extremely difficult to re-use a machine learning model built by using one user’s data on others and requires tedious re-training on new users. In our lab research, we work with brain-computer Interfaces along three research thrusts, namely, transfer learning for BCIs, approaches to enhance detection for low SNR BCI signals, and exploring futuristic applications using BCIs which dovetail seamlessly with an increasingly connected world. We outline our 3 research thrusts as follows:
+                                    
+                                    
+<!--                                    In this work, we attempt to address these problems using a systems approach. We view these challenges as subproblems in a wider system of brain-computer interfaces and their appli- cations. While there is neuroscientific and biomedical literature that aims to address these challenges, we propose solutions that aim to enhance the functionality of BCIs as part of a larger system. We use several methods in order to tackle these fundamental roadblocks present in BCIs.-->
+<!--                                    By using transfer learning, we try to analyze ways for modifying an existing system trained on one user such that it performs well on unseen data. We also explore learning-->
+<!--                                    -->
+<!--                                    through limited labeled data using few-shot learning, as well as domain adaptation ap- proaches to reshape target data so it appears similar to the source data in the probability space. We attempt to address low SNR in BCI signals by investigating how BCI signals respond to the presence of more than one stimulus and how these elicited signals interact with each other. We study how changes in one signal provide information about the other signal, which helps us with detection, attribution, synchronization, etc.-->
+                                    </p>
+<!--                                    <div class="row">-->
+<!--                                         <div class="col-6 col-12-medium">-->
+<!--                                             <img src="images/projects/bench.png" style="height:300px">-->
+<!--                                        </div>-->
+<!--                                        <div class="col-6 col-12-medium">-->
+<!--                                            <img src="images/projects/cov.png" style="height:300px">-->
+<!--                                        </div>-->
+<!--                                    </div>-->
 
 									<!-- Content -->
 										<h2 id="content">Research Thrusts</h2>
                                         <h2>1. Transfer Learning for Brain-Computer Interfaces
                                             </h2>
+                                        
+                                        <p>
+                                        We primarily look at the Error Potential signal (ErrP) for this thrust, a signal known for its poor generalization.  In this work, we present a method that not only shrinks
+                                        the re-calibration overhead for this signal to a tiny fraction of the original but
+                                        also provides a generalization accuracy that approaches that of
+                                        intra-user models. We use transfer learning to transfer relevant
+                                        parts of our detection model using divergence calculations in the
+                                        signal probability space and use few-shot learning to adapt the
+                                        model to a new user. We demonstrate our method on a dataset
+                                        collected in our lab and obtain state-of-the-art results. <break>
+                                            We also explored a multi-human detection model that leverages the observation of multiple human beings in detecting the presence of an error potential. One method to overcome this is to utilize
+                                            multiple users’ observations and average their signals to get an
+                                            aggregate signal. However, the second problem arises as BCI
+                                            signals generalize poorly to other subjects which makes user-
+                                            specific training mandatory for the model to perform well across
+                                            the board or generalize well to unseen data. This places a lot
+                                            of overhead on new users who want to use a BCI device in the
+                                            form of calibration and training. We investigated these
+                                            problems and proposed using multiplicity as a viable solution dimension.
 									
 										<div class="row">
-											<div class="col-6 col-12-small">
-												<h3>Paper 1</h3>
-												<p>Description</p>
-											</div>
-											<div class="col-6 col-12-small">
-												<h3>Figures</h3>
-												<p>Figures and descriptions</p>
-											</div>
-											<!-- Break -->
-											<div class="col-4 col-12-medium">
-												<h3>Paper 2</h3>
-												<p>Description of paper 2</p>
-											</div>
-											<div class="col-4 col-12-medium">
-												<h3>Figure 2</h3>
-												<p>Figure description</p>
-											</div>
-											<div class="col-4 col-12-medium">
-												<h3>Other</h3>
-												<p>Other additional info</p>
-											</div>
-										</div>
+                                            <div class="col-3 col-12-small" style="padding:1em">
+                                                <img src="images/projects/tx_ants.png" style="height:150px">
+                                            </div>
+											<div class="col-9 col-12-medium" style="padding:1em;">
+												
+												<p style="padding:2em">Ekansh Gupta, Mohit Agarwal and Raghupathy Sivakumar  <br>
+                                                "<a href="archive/ekansh_ants_2023.pdf">Transfer Learning for Brain-Computer Interfaces in Cyber-Physical Systems </a>,"<br>
+                                                2023 IEEE International Conference on Advanced Networks and Telecommunications Systems (ANTS 2023)</p>
+                                                
+                                                </div>
+                                            
+                                            
+                                            <div class="col-3 col-12-small" style="padding:1em">
+                                                <img src="images/projects/multi_human.png" style="height:150px">
+                                            </div>
+                                            <div class="col-9 col-12-medium" style="padding:1em">
+                                                
+                                                <p style="padding:2em">Ekansh Gupta and Raghupathy Sivakumar <br>
+                                                "<a href="https://ieeexplore.ieee.org/abstract/document/9892115">Wisdom of the Crowd: Using Multi-human Few-shot Learning to Improve Cross- User Generalization for Error Potentials in BCI Systems</a>",<br>
+                                                2022 International Joint Conference on Neural Networks (IJCNN), Padua, Italy, 2022, pp. 1-8.</p>
+                                                
+                                                </div>
+                                            
+                                            </div>
+                                            
+                                            <p>
+                                            In our more recent work, we
+                                            overview the factors contributing to poor generalization on
+                                            a more granular level and propose a
+                                            novel algorithm to mitigate the associated covariate shift in the probability space using partial target-aware optimal transport. We demonstrate
+                                            our method on an ErrP dataset collected in our lab. Our
+                                            method outperforms state-of-the-art models for cross-user
+                                            generalization which translates to a reduction in calibration
+                                            time by an order of magnitude.
+                                            </p>
+                                            <div class="row">
+                                            <div class="col-3 col-12-small" style="padding:1em">
+                                                <img src="images/projects/ptaot.png" style="height:150px">
+                                            </div>
+                                            <div class="col-9 col-12-medium" style="padding:1em">
+                                                
+                                                <p style="padding:2em">Ekansh Gupta, Cheng-Yeh Chen, Raghupathy Sivakumar <br>
+                                                "<a href="archive/ekansh_smartwear_2023.pdf">Hyper-Accelerated Learning for Brain-Computer Interfaces via Partial Target-Aware Optimal Transport </a>,"<br>
+                                                Proceedings of the 2nd Workshop on Smart Wearable Systems and Applications (SmartWear 2023)</p>
+                                                
+                                                </div>
+                                            </div>
+                                           <p> Our continuing research is focussed on improving the separability of unsupervised EEG embeddings and optimally adapting them from source to target spaces. </p>
+
+										
+                                        
+                                        <h2>2. Improving signal detection using Amplification/Modulation
+                                            </h2>
+                                        
+                                        <p>While brain signals
+                                        like the error potential (ErrP) showcase low SNR and have
+                                        lower detection accuracy, there are other kinds of signals that
+                                        showcase high detection rates and resilience to noise. Motivated
+                                        by this disparity, we ask ourselves if the abstract cognitive states
+                                        involved in the evocation of such resilient signals be leveraged
+                                        to amplify or augment the weaker signals, and thus provide
+                                        them a performance boost. We investigate this hypothesis by
+                                        designing an experiment to interface these two kinds of signals
+                                        and collect EEG data in our lab through human trials. We
+                                        evaluate our hypothesis and contrast our results with other
+                                        datasets of isolated signals using spatial filtering and deep
+                                        learning models. We obtain negative results and reflect on the
+                                        insights and the lessons learned based on them and talk about
+                                        plausible explanations and future work while also reassessing
+                                        our initial hypothesis
+                                        </p>
+                                        <div class="row">
+                                        <div class="col-3 col-12-small" style="padding:1em">
+                                            <img src="images/projects/perfail.png" style="height:150px">
+                                        </div>
+                                        <div class="col-9 col-12-medium" style="padding:1em">
+                                            <p style="padding:2em">Ekansh Gupta, Cheng-Yeh Chen and Raghupathy Sivakumar  <br>
+                                            "<a href="archive/todo.pdf">Do Weak Brain Signals Get Amplified When Strong Brain Signals are Evoked?</a>,"<br>
+                                            Third International Workshop on Negative Results in Pervasive Computing (PerFail 2024)</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <p>Our continuing research is focused on leveraging the characteristics of easily-detectable signals to aid in the detection of low SNR signals.</p>
+
+    
+    <h2>3. Transformative BCI applications to aid ML models and humans
+        </h2>
+    
+    <p>As BCIs help us gauge user intent without needing explicit communication, they can be helpful for human-aided or human-in-the-loop systems that enhancing the performance of AI agents. We outline our work where we used implicit user feedback using BCIs to accelerate RL agents. <br>
+    
+    Providing Reinforcement Learning (RL) agents with
+    human feedback can dramatically improve various aspects of
+    learning. However, previous methods require human observer
+    to give inputs explicitly (e.g., press buttons, voice interface),
+    burdening the human in the loop of RL agent’s learning process.
+    Further, providing explicit human advise (feedback) continuously
+    is not always possible or too restrictive, e.g., autonomous driving,
+    disabled rehabilitation, etc. In this work, we investigate capturing
+    human’s intrinsic reactions as implicit (and natural) feedback
+    through EEG in the form of error-related potentials (ErrP),
+    providing a natural and direct way for humans to improve the RL
+    agent learning. As such, the human intelligence can be integrated
+    via implicit feedback with RL algorithms to accelerate the
+    learning of RL agent. We develop three reasonably complex 2D
+    discrete navigational games to experimentally evaluate the overall
+    performance of the proposed work. And the motivation of using
+    ErrPs as feedbacks is also verified by subjective experiments.
+    Major contributions of our work are as follows, (i) we propose
+    and experimentally validate the zero-shot learning of ErrPs,
+    where the ErrPs can be learned for one game, and transferred to
+    other unseen games, (ii) we propose a novel RL framework for
+    integrating implicit human feedbacks via ErrPs with RL agent,
+    improving the label efficiency and robustness to human mistakes,
+    and (iii) compared to prior works, we scale the application of
+    ErrPs to reasonably complex environments, and demonstrate the
+    significance of our approach for accelerated learning through real
+    user experiments
+    </p>
+    <div class="row">
+    <div class="col-3 col-12-small" style="padding:1em">
+        <img src="images/projects/rl.png" style="height:150px">
+    </div>
+    <div class="col-9 col-12-medium" style="padding:1em">
+        <p style="padding:2em">Duo Xu, Mohit Agarwal, Ekansh Gupta, Faramarz Fekri, and Raghupathy Sivakumar<br>
+        "<a href="https://www.sciencedirect.com/science/article/pii/S0925231221009887">Accelerating Reinforcement Learning using EEG-based Implicit Human Feedback</a>",<br>
+        Neurocomputing, Elsevier - 2021.</p>
+        </div>
+    </div>
+    
+    
+    
+    
+    <p>We also explored the implicit security offered by brain signals in applications like authentication and leveraged the highly individualistic signals like eye-blinks to design an authentication system. we specifically focused on the EEG signal corresponding to the human eye-blink to create an authentication system that
+    could be used to distinguish between multiple users accurately
+    and efficiently while also being burden-less and convenient to the
+    users. We use a dataset of eye-blink related EEG signals, collected
+    from 20 users, to study our solution. Our results show that blink
+    signals can be used for accurately distinguishing between different
+    users and hence can be used for authentication.</p>
+
+    <div class="row">
+    <div class="col-3 col-12-small" style="padding:1em">
+        <img src="images/projects/blink.png" style="height:150px">
+    </div>
+    <div class="col-9 col-12-medium" style="padding:1em">
+        <p style="padding:2em">Ekansh Gupta, Mohit Agarwal, and Raghupathy Sivakumar <br>
+        "<a href="archive/ekansh-icc20.pdf">Blink to Get In: Biometric Authentication for Mobile Devices using EEG Signals,</a>,"<br>
+        IEEE International Conference on Communications, ICC, 2020.</p>
+        </div>
+    </div>
+    
+
 
 									<hr class="major" />
 
@@ -96,11 +263,11 @@
     										<li>
     											<span class="opener">Projects</span>
     											<ul>
-    												<li><a href="BCI1.html">Transfer Learning for Brain Computer Interfaces</a></li>
-    												<li><a href="PSM.html">Power saving in IoT devices</a></li>
-    												<li><a href="BCI2.html">Enhancing Signal detection in Brain-Computer Interfaces</a></li>
-                                                    <li><a href="WS.html">Wireless Sensing</a></li>
-                                                    <li><a href="WLS.html">Wireless Link Sharing</a></li>
+    												<li><a href="PSM.html">Next-G Sensing and Communications</a></li>
+                                                    <li><a href="BCI1.html">Brain Computer Interfaces Research</a></li>
+<!--    												<li><a href="BCI2.html">Enhancing Signal detection in Brain-Computer Interfaces</a></li>-->
+<!--                                                    <li><a href="WS.html">Wireless Sensing</a></li>-->
+<!--                                                    <li><a href="WLS.html">Wireless Link Sharing</a></li>-->
     											</ul>
     										</li>
     										<li><a href="startups.html">Startups</a></li>
