@@ -258,7 +258,7 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Home</a></li>
+										<li><a href="index.php">Home</a></li>
 <!--										<li><a href="vision.html">Vision</a></li>-->
 										<li><a href="people_new.html">People</a></li>
 
