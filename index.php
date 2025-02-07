@@ -155,21 +155,7 @@
                                                 </ul>
 											</div>
 										</article>
-										<article>
-                                            <span>
-                                                <img src="images/current/clt.jpg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
-                                            </span>
-											<div class="content">
-                                                <h3>Ching-Lun Tai</h3>
-                                                <p style="margin:0 0 1em 0;">PhD Student</p>
-                                                <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/ching-lun-tai-913200126/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
-                                                    <li><a href="mailto:ctai32@gatech.edu" class="fa fa-envelope" style="height:10px;width:10px;"></a></li>
-                                                    <li><a href="https://scholar.google.com/citations?user=tCx5VJYAAAAJ&hl=en&oi=ao" class="fa fa-graduation-cap" style="height:10px;width:10px;"></a></li>
-                                                </ul>
-											</div>
-										</article>
-										<article>
+                                        <article>
                                             <span>
                                                 <img src="images/current/cyc.jpg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
                                             </span>
@@ -180,6 +166,20 @@
                                                     <li><a href="https://www.linkedin.com/in/cheng-yeh" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
                                                     <li><a href="mailto:cchen847@gatech.edu" class="fa fa-envelope" style="height:10px;width:10px;"></a></li>
                                                     <li><a href="https://scholar.google.com/citations?user=Wo5HJ8wAAAAJ&hl=en" class="fa fa-graduation-cap" style="height:10px;width:10px;"></a></li>
+                                                </ul>
+											</div>
+										</article>
+										<article>
+                                            <span>
+                                                <img src="images/current/hcl.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                            </span>
+											<div class="content">
+                                                <h3>Hung-Chun Lin</h3>
+                                                <p style="margin:0 0 1em 0;">PhD Student</p>
+                                                <ul class="icons">
+                                                    <li><a href="https://www.linkedin.com/in/hung-chun-lin-2528671a6/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="mailto:hlin464@gatech.edu" class="fa fa-envelope" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://scholar.google.com/citations?user=_Y-8ak0AAAAJ" class="fa fa-graduation-cap" style="height:10px;width:10px;"></a></li>
                                                 </ul>
 											</div>
 										</article>
