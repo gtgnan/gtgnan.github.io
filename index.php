@@ -126,35 +126,6 @@
                                         <h2>Students</h2>
                                     </header>
                                     <div class="features">
-
-										<article>
-											<span>
-                                                <img src="images/current/skv.jpg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
-                                            </span>
-											<div class="content">
-												<h3>Shyam Krishnan</h3>
-                                                <p style="margin:0 0 1em 0;">PhD Student</p>
-                                                <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/shyam-krishnan-v-7271455a/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
-                                                    <li><a href="mailto:shyam1@gatech.edu" class="fa fa-envelope" style="height:10px;width:10px;"></a></li>
-                                                    <li><a href="https://scholar.google.com/citations?user=2ryzMF0AAAAJ&hl=en" class="fa fa-graduation-cap" style="height:10px;width:10px;"></a></li>
-                                                </ul>
-											</div>
-										</article>
-										<article>
-                                            <span>
-                                                <img src="images/current/eg.jpg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
-                                            </span>
-											<div class="content">
-                                                <h3>Ekansh Gupta</h3>
-                                                <p style="margin:0 0 1em 0;">PhD Student</p>
-                                                <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/ekansh-gupta-18ba4373/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
-                                                    <li><a href="mailto:egupta8@gatech.edu" class="fa fa-envelope" style="height:10px;width:10px;"></a></li>
-                                                    <li><a href="https://scholar.google.com/citations?user=HShuFkgAAAAJ&hl=en" class="fa fa-graduation-cap" style="height:10px;width:10px;"></a></li>
-                                                </ul>
-											</div>
-										</article>
                                         <article>
                                             <span>
                                                 <img src="images/current/cyc.jpg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
