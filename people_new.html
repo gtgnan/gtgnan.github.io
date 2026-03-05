@@ -12,27 +12,65 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* Larger social icons across all screen sizes */
+			/* ── Social icon row: compact, left-aligned, no circle bloat ── */
+			ul.icons {
+				display: flex !important;
+				flex-wrap: wrap !important;
+				align-items: center !important;
+				list-style: none !important;
+				margin: 0.5em 0 0 0 !important;
+				padding: 0 !important;
+				gap: 0 !important;
+			}
+			ul.icons li {
+				padding: 0 !important;
+				margin: 0 0.4em 0 0 !important;
+				line-height: 1 !important;
+			}
 			ul.icons li a {
-				font-size: 1.3em !important;
+				display: inline-flex !important;
+				align-items: center !important;
+				justify-content: center !important;
+				width: 2em !important;
+				height: 2em !important;
+				min-width: 0 !important;
+				min-height: 0 !important;
+				padding: 0 !important;
+				margin: 0 !important;
+				font-size: 1.1em !important;
+				line-height: 1 !important;
+				border-radius: 50% !important;
 			}
 
-			/* On mobile: stack student card vertically (photo on top, full-width text below) */
+			/* ── Student cards: always left-aligned ── */
+			.features article.student-article {
+				display: block !important;
+				text-align: left !important;
+			}
+			.student-card-inner {
+				display: flex !important;
+				align-items: flex-start !important;
+				text-align: left !important;
+			}
+			.student-card-inner .content {
+				text-align: left !important;
+			}
+			.student-card-inner .content h3,
+			.student-card-inner .content p {
+				text-align: left !important;
+			}
+
+			/* ── On mobile: stack photo above text ── */
 			@media screen and (max-width: 736px) {
 				.student-card-inner {
 					flex-direction: column !important;
-					align-items: center !important;
 				}
 				.student-card-inner .person-img {
 					margin: 0 0 0.75em 0 !important;
-					height: 100px !important;
+					height: 90px !important;
 				}
 				.student-card-inner .content {
 					width: 100% !important;
-					text-align: center;
-				}
-				.student-card-inner .content ul.icons {
-					justify-content: center;
 				}
 			}
 		</style>
@@ -70,7 +108,7 @@
                                                 <ul class="icons">
                                                     <li><a href="https://siva.ece.gatech.edu/" class="fas fa-home" ></a></li>
                                                     <li><a href="https://www.linkedin.com/in/sivarag" class="icon brands fa-linkedin" ></a></li>
-                                                    <li><a href="/cdn-cgi/l/email-protection#ea99839c8baa8d8b9e8f8982c48f8e9f" class="fa fa-envelope"></a></li>
+                                                    <li><a href="mailto:siva@gatech.edu" class="fa fa-envelope"></a></li>
                                                     <li><a href="https://scholar.google.com/citations?user=FGB5FvgAAAAJ&hl=en" class="fa fa-graduation-cap" ></a></li>
                                                 </ul>
                                             </div>
@@ -86,7 +124,7 @@
                                     <div class="features">
                                         <!-- FIX: Research interests moved inside each student's article so they stay
                                              correctly associated on mobile (single-column) layouts. -->
-                                        <article style="margin-bottom: 1.5em; flex-direction: column;">
+                                        <article class="student-article" style="margin-bottom: 1.5em;">
                                             <div class="student-card-inner" style="display:flex; align-items:flex-start;">
                                                 <span>
                                                     <img src="images/current/cyc.jpg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
@@ -101,14 +139,14 @@
                                                     </p>
                                                     <ul class="icons">
                                                         <li><a href="https://www.linkedin.com/in/cheng-yeh" class="icon brands fa-linkedin" ></a></li>
-                                                        <li><a href="/cdn-cgi/l/email-protection#3c5f5f54595204080b7c5b5d48595f5412595849" class="fa fa-envelope"></a></li>
+                                                        <li><a href="mailto:cchen847@gatech.edu" class="fa fa-envelope"></a></li>
                                                         <li><a href="https://scholar.google.com/citations?user=Wo5HJ8wAAAAJ&hl=en" class="fa fa-graduation-cap" ></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <p style="margin-top: 0.75em; margin-bottom: 0;"><b>Research Interests</b>: Brain-Machine Alignment, Transformer Mechanistic Interpretability, Neural Decoding</p>
                                         </article>
-                                        <article style="margin-bottom: 1.5em; flex-direction: column;">
+                                        <article class="student-article" style="margin-bottom: 1.5em;">
                                             <div class="student-card-inner" style="display:flex; align-items:flex-start;">
                                                 <span>
                                                     <img src="images/current/hcl.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
@@ -123,7 +161,7 @@
                                                     </p>
                                                     <ul class="icons">
                                                         <li><a href="https://www.linkedin.com/in/hung-chun-lin-2528671a6/" class="icon brands fa-linkedin" ></a></li>
-                                                        <li><a href="/cdn-cgi/l/email-protection#442c282d2a7072700423253021272c6a212031" class="fa fa-envelope"></a></li>
+                                                        <li><a href="mailto:hlin464@gatech.edu" class="fa fa-envelope"></a></li>
                                                         <li><a href="https://scholar.google.com/citations?user=_Y-8ak0AAAAJ" class="fa fa-graduation-cap" ></a></li>
                                                     </ul>
                                                 </div>
@@ -540,4 +578,4 @@
 			</div>
 
 		<!-- Scripts -->
-			<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js">
+			<script src="assets/js/jquery.min.js">
