@@ -11,6 +11,31 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Larger social icons across all screen sizes */
+			ul.icons li a {
+				font-size: 1.3em !important;
+			}
+
+			/* On mobile: stack student card vertically (photo on top, full-width text below) */
+			@media screen and (max-width: 736px) {
+				.student-card-inner {
+					flex-direction: column !important;
+					align-items: center !important;
+				}
+				.student-card-inner .person-img {
+					margin: 0 0 0.75em 0 !important;
+					height: 100px !important;
+				}
+				.student-card-inner .content {
+					width: 100% !important;
+					text-align: center;
+				}
+				.student-card-inner .content ul.icons {
+					justify-content: center;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -37,16 +62,16 @@
 
                                         <article>
                                             <span>
-                                                <img src="images/current/rs.jpg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px;margin:0 3em 0 0" >
+                                                <img src="images/current/rs.jpg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Dr. Raghupathy Sivakumar</h3>
                                                 <p style="margin:0 0 1em 0;">Professor</p>
                                                 <ul class="icons">
-                                                    <li><a href="https://siva.ece.gatech.edu/" class="fas fa-home" style="height:10px;width:10px;"></a></li>
-                                                    <li><a href="https://www.linkedin.com/in/sivarag" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
-                                                    <li><a href="mailto:siva@gatech.edu" class="fa fa-envelope" style="height:10px;width:10px;"></a></li>
-                                                    <li><a href="https://scholar.google.com/citations?user=FGB5FvgAAAAJ&hl=en" class="fa fa-graduation-cap" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://siva.ece.gatech.edu/" class="fas fa-home" ></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/sivarag" class="icon brands fa-linkedin" ></a></li>
+                                                    <li><a href="/cdn-cgi/l/email-protection#ea99839c8baa8d8b9e8f8982c48f8e9f" class="fa fa-envelope"></a></li>
+                                                    <li><a href="https://scholar.google.com/citations?user=FGB5FvgAAAAJ&hl=en" class="fa fa-graduation-cap" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
@@ -62,9 +87,9 @@
                                         <!-- FIX: Research interests moved inside each student's article so they stay
                                              correctly associated on mobile (single-column) layouts. -->
                                         <article style="margin-bottom: 1.5em; flex-direction: column;">
-                                            <div style="display:flex; align-items:flex-start;">
+                                            <div class="student-card-inner" style="display:flex; align-items:flex-start;">
                                                 <span>
-                                                    <img src="images/current/cyc.jpg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                    <img src="images/current/cyc.jpg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                                 </span>
                                                 <div class="content">
                                                     <h3 style="margin:0 0 0 0;">Cheng-Yeh Chen</h3>
@@ -75,18 +100,18 @@
                                                         B.S, National Taiwan University, 2019
                                                     </p>
                                                     <ul class="icons">
-                                                        <li><a href="https://www.linkedin.com/in/cheng-yeh" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
-                                                        <li><a href="mailto:cchen847@gatech.edu" class="fa fa-envelope" style="height:10px;width:10px;"></a></li>
-                                                        <li><a href="https://scholar.google.com/citations?user=Wo5HJ8wAAAAJ&hl=en" class="fa fa-graduation-cap" style="height:10px;width:10px;"></a></li>
+                                                        <li><a href="https://www.linkedin.com/in/cheng-yeh" class="icon brands fa-linkedin" ></a></li>
+                                                        <li><a href="/cdn-cgi/l/email-protection#3c5f5f54595204080b7c5b5d48595f5412595849" class="fa fa-envelope"></a></li>
+                                                        <li><a href="https://scholar.google.com/citations?user=Wo5HJ8wAAAAJ&hl=en" class="fa fa-graduation-cap" ></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <p style="margin-top: 0.75em; margin-bottom: 0;"><b>Research Interests</b>: Brain-Machine Alignment, Transformer Mechanistic Interpretability, Neural Decoding</p>
                                         </article>
                                         <article style="margin-bottom: 1.5em; flex-direction: column;">
-                                            <div style="display:flex; align-items:flex-start;">
+                                            <div class="student-card-inner" style="display:flex; align-items:flex-start;">
                                                 <span>
-                                                    <img src="images/current/hcl.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                    <img src="images/current/hcl.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                                 </span>
                                                 <div class="content">
                                                     <h3 style="margin:0 0 0 0;">Hung-Chun Lin</h3>
@@ -97,9 +122,9 @@
                                                         B.S, National Taiwan University, 2021
                                                     </p>
                                                     <ul class="icons">
-                                                        <li><a href="https://www.linkedin.com/in/hung-chun-lin-2528671a6/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
-                                                        <li><a href="mailto:hlin464@gatech.edu" class="fa fa-envelope" style="height:10px;width:10px;"></a></li>
-                                                        <li><a href="https://scholar.google.com/citations?user=_Y-8ak0AAAAJ" class="fa fa-graduation-cap" style="height:10px;width:10px;"></a></li>
+                                                        <li><a href="https://www.linkedin.com/in/hung-chun-lin-2528671a6/" class="icon brands fa-linkedin" ></a></li>
+                                                        <li><a href="/cdn-cgi/l/email-protection#442c282d2a7072700423253021272c6a212031" class="fa fa-envelope"></a></li>
+                                                        <li><a href="https://scholar.google.com/citations?user=_Y-8ak0AAAAJ" class="fa fa-graduation-cap" ></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -113,352 +138,352 @@
                                     <div class="features">
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/skv.jpg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/skv.jpg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Shyam Krishnan</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D./ Sept 2025
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/shyam100v/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/shyam100v/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/eg.jpg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/eg.jpg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Ekansh Gupta</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D./ Sept 2025
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/ekansh-gupta-18ba4373/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/ekansh-gupta-18ba4373/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
 
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/clt.jpg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/clt.jpg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Ching-Lun Tai</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D./ Dec 2024
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/ching-lun-tai-913200126/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/ching-lun-tai-913200126/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/sl.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/sl.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Shruti Lall</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D./ May 2022
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/shruti-lall-3339b5a0/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/shruti-lall-3339b5a0/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/ma.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/ma.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Mohit Agarwal</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D./ December 2020
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/meagmohit" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/meagmohit" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/yj.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/yj.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Yubing Jian</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D./ July 2020
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/yubing-jian-72163546/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/yubing-jian-72163546/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/upm.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/upm.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Uma Parthavi Moravapalle</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D./ February 2019
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/umamoravapalle/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/umamoravapalle/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/bk.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/bk.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Bhuvana Krishnaswamy</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D. / July 2018
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/bhuvana-krishnaswamy-30a7a965/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/bhuvana-krishnaswamy-30a7a965/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/cfs.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/cfs.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Chao-Fang Shih</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D. / November 2016
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/chaofangshih/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/chaofangshih/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/ss.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/ss.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Shruti Sanadhya</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D. / November 2013
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/shruti-sanadhya-054b9358/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/shruti-sanadhya-054b9358/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/clt.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/clt.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Cheng-Lin Tsao</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D. / August 2012
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/chenglintsao/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/chenglintsao/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/sk.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/sk.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Sandeep Kakumanu</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D. / December 2011
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/sandeep-kakumanu-11b7ab1/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/sandeep-kakumanu-11b7ab1/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/sl2.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/sl2.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Sriram Lakshmanan</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D. / July 2011
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/sriram-lakshmanan-4b72005/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/sriram-lakshmanan-4b72005/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/zz.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/zz.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Zhenyun Zhuang</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D. / August 2010
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/zhenyun/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/zhenyun/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/yj2.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/yj2.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Dr. Yeonsik Jeong</h3>
                                                 <p style="margin:0 0 1em 0;">Post Doctoral Researcher
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/ysjeong/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/ysjeong/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/av.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/av.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Aravind Velayutham</h3>
                                                 <p style="margin:0 0 1em 0;">M.S.
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/aravindvel/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/aravindvel/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/tyc.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/tyc.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Tae-Young Chang</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D. / December 2007
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/tychang/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/tychang/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/yz.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/yz.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Yujie Zhu</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D. / August 2007
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/yujie-zhu-6050a112/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/yujie-zhu-6050a112/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/rv.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/rv.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Ramanuja Vedantham</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D. / August 2006
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/ramanuja-vedantham-8a29b04/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/ramanuja-vedantham-8a29b04/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/ks.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/ks.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Karthikeyan Sundaresan</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D. / August 2006
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/karthikeyan-karthik-sundaresan-43633732/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/karthikeyan-karthik-sundaresan-43633732/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/sjp.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/sjp.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Seung-Jong Park</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D. / August 2004
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/seung-jong-jay-park-2215748/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/seung-jong-jay-park-2215748/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/hyh.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/hyh.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Hung-Yun Hsieh</h3>
                                                 <p style="margin:0 0 1em 0;">Ph.D. / August 2004
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="http://cc.ee.ntu.edu.tw/~hyhsieh/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="http://cc.ee.ntu.edu.tw/~hyhsieh/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/rb.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/rb.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Raheem Beyah</h3>
                                                 <p style="margin:0 0 1em 0;">co-advisor, Ph.D. / 2003
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/raheem-beyah-74aa501/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/raheem-beyah-74aa501/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/aa.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/aa.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Ashraf Awad</h3>
                                                 <p style="margin:0 0 1em 0;">co-advisor, Ph.D. / December 2003
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/ashraf-awad-4776061/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/ashraf-awad-4776061/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/khk.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/khk.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Kyu-Han Kim</h3>
                                                 <p style="margin:0 0 1em 0;">M.S. / May 2003
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/kyuhankim/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/kyuhankim/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/va.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/va.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Vaidyanath Anantharaman</h3>
                                                 <p style="margin:0 0 1em 0;">M.S. / May 2002
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/vanantharaman/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/vanantharaman/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
                                         <article style="margin-bottom: 2em">
                                             <span>
-                                                <img src="images/alumni/yb.jpeg" alt="Avatar" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 3em 0 0" >
+                                                <img src="images/alumni/yb.jpeg" alt="Avatar" class="person-img" style="border-radius: 40%; object-fit: contain; height:120px; margin:0 1.5em 0 0" >
                                             </span>
                                             <div class="content">
                                                 <h3>Yannick Blanpain</h3>
                                                 <p style="margin:0 0 1em 0;">M.S. / July 2001
                                                 </p>
                                                 <ul class="icons">
-                                                    <li><a href="https://www.linkedin.com/in/yannick-blanpain-80070b10/" class="icon brands fa-linkedin" style="height:10px;width:10px;"></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/yannick-blanpain-80070b10/" class="icon brands fa-linkedin" ></a></li>
                                                 </ul>
                                             </div>
                                         </article>
@@ -515,11 +540,4 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+			<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js">
